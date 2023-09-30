@@ -1,0 +1,1 @@
+from gallery.models.photos import Photo
