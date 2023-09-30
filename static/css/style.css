@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: linear-gradient(to right, rgba(236, 188, 118, 1) 50%, rgba(255, 254, 250, 1) 50%);
+}
+
+.main {
+    width: 539px;
+    height: 741px;
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.logo-color {
+    color: rgb(198, 85, 59)
+}
+
+.header {
+    text-align: center;
+}
+
+.link {
+    margin-top: 10px;
+}
+
+.btn-color {
+    background-color: rgb(246, 246, 246);
+    color: rgb(13, 148, 246);
+}
+
+.brd-radius {
+    border-radius: 40px
+}
+
+.container.brd-radius {
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.link-button {
+    display: flex;
+    justify-content: center;
+}
+
+.link-button button {
+    margin: 0 5px;
+}
+
+.brd-radius-input {
+    border-radius: 8px
+}
+
+.btn-color-submit {
+    background-color: rgb(228, 135, 0)
+}
+
+.color-orange {
+    color: rgb(183, 117, 20);
+}
+
+.color-dark-red {
+    color: rgb(172, 49, 19)
+}
+
+.color-white-gray {
+    background-color: rgb(255, 244, 227);
+    color: rgb(183, 117, 20)
+}
+
+.font-size-header {
+    font-size: 55px
+}
+
+
+/* 198 85 59    */
