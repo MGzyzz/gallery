@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Your photos</h1>
+    <hr>
+     <div class="row mt-5">
+                      {% for photo in photos %}
+  <div class="col-lg-4 col-md-12">
+      <a href="#"><img src="{{ photo.image.url }}" class="w-100 shadow-1-strong rounded mb-4 shadow-lg" alt="photos"/>
+</a>
+  </div>
+          {% endfor %}
+
+</div>
+    
+{% endblock %}
