@@ -1,11 +1,19 @@
 from rest_framework import serializers, permissions
 from gallery.models import Photo
+from rest_framework.permissions import IsAuthenticated
 
 
 class PhotoListSerializers(serializers.ModelSerializer):
     class Meta:
         model = Photo
         fields = '__all__'
+
+
+class PhotoSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Photo
+        fields = ['signature', 'image']
+
 
 class PhotoDetailSerializers(serializers.ModelSerializer):
     class Meta:
@@ -16,7 +24,7 @@ class PhotoDetailSerializers(serializers.ModelSerializer):
 class PhotoUpdateSerializers(serializers.ModelSerializer):
     class Meta:
         model = Photo
-        fields = ['summary', 'description', 'status', 'type']
+        fields = ['signature']
 
 
 
