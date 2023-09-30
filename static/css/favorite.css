@@ -1,0 +1,22 @@
+.icon-hover:hover {
+    color: rgb(142,142,142);
+}
+
+
+
+.icons-style {
+  border: none;
+  background: #f8f9fa;
+}
+
+.icons-style-active{
+    color: red;
+}
+
+.icon-width-down {
+    font-size: 30px;
+}
+
+.width-button {
+    width: 260px;
+}
