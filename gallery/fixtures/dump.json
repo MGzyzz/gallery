@@ -1,0 +1,107 @@
+[
+{
+  "model": "gallery.photo",
+  "pk": 10,
+  "fields": {
+    "image": "photos/pexels-harrison-haines-2973098.jpg",
+    "signature": "My new photo Check_one",
+    "created_at": "2023-09-30T13:22:01.213Z",
+    "user": 5,
+    "user_favorite": []
+  }
+},
+{
+  "model": "gallery.photo",
+  "pk": 11,
+  "fields": {
+    "image": "photos/pexels-umar-mukhtar-1538177.jpg",
+    "signature": "My new photo Check_two",
+    "created_at": "2023-09-30T13:22:45.210Z",
+    "user": 6,
+    "user_favorite": []
+  }
+},
+{
+  "model": "gallery.photo",
+  "pk": 12,
+  "fields": {
+    "image": "photos/pexels-marcus-herzberg-1473673.jpg",
+    "signature": "My new photo Check_three",
+    "created_at": "2023-09-30T13:23:30.686Z",
+    "user": 7,
+    "user_favorite": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$F8AbKhcG0jEdBZS2IJUklj$vkv+sEGdxXEkFHh9dgjX7sBs0+sMWme50OIczMR7lM0=",
+    "last_login": "2023-09-30T13:23:51.172Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-09-30T13:20:24.518Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$HgeCYOcf88SLbD0GqgKiO7$iHak4Gul7Ba9fsS2p2nYnzApe/79aCLVf1kWW1Vz6a0=",
+    "last_login": "2023-09-30T13:21:35.848Z",
+    "is_superuser": false,
+    "username": "Check_one",
+    "first_name": "Check",
+    "last_name": "One",
+    "email": "check_one@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-09-30T13:21:35.713Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$vVn8jgk3pzv5uJ6joAiZYt$BbAiSBlML1gRVGc5sY6BYKei0W8yeN88rOw3n6D/9Mo=",
+    "last_login": "2023-09-30T13:22:25.175Z",
+    "is_superuser": false,
+    "username": "Check_two",
+    "first_name": "Check",
+    "last_name": "Two",
+    "email": "check_two@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-09-30T13:22:25.043Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$77stMV00ArF7cnYMGV3Zib$Jdvr4OBajg+dwWd4cikJTbQUBtr2GNQKbwnE8+oYAQ8=",
+    "last_login": "2023-09-30T13:23:12.188Z",
+    "is_superuser": false,
+    "username": "Check_three",
+    "first_name": "Check",
+    "last_name": "Three",
+    "email": "Check_three@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-09-30T13:23:12.033Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
