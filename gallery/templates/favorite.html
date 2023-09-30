@@ -2,12 +2,25 @@
 
 {% block content %}
   <h1>Избранные фотографии</h1>
-  <ul>
-    {% for photo in favorite_photos %}
-      <li>
-        <img src="{{ photo.image.url }}" alt="{{ photo.signature }}">
-        <p>{{ photo.signature }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="row mt-5">
+        {% for photo in favorite_photos %}
+            <div class="col-lg-4 col-md-12">
+                <a href="{% url 'detail' photo.id %}">
+                    <img src="{{ photo.image.url }}" class="w-100 shadow-1-strong rounded mb-4 shadow-lg" alt="photos">
+                </a>
+<p>                                {{ photo.signature }}
+</p>
+                    <p>{{ photo.user.username }}</p>
+                    <p>{{ photo.created_at }}</p>
+                {% if user.is_authenticated %}
+                    {% csrf_token %}
+                    {% if not photo.id in favorited_ids %}
+                        <button class="btn btn-danger remove-favorite mt-3 mb-3" data-photo-id="{{ photo.id }}">Удалить из избранного</button>
+
+                    {% else %}
+                    {% endif %}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
