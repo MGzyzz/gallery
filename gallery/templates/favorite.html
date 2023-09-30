@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Избранные фотографии</h1>
+  <ul>
+    {% for photo in favorite_photos %}
+      <li>
+        <img src="{{ photo.image.url }}" alt="{{ photo.signature }}">
+        <p>{{ photo.signature }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

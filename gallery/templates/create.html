@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="mt-5">New Photos</h1>
+    <hr>
+    <form id="photoForm" enctype="multipart/form-data" method="POST">
+    {% csrf_token %}
+    {% include 'partial/form.html' with button_text='Add photos' %}
+    </form>
+{% endblock %}

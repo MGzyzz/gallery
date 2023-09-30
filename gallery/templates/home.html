@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row mt-5">
+        {% for photo in photos %}
+            <div class="col-lg-4 col-md-12">
+                <a href="{% url 'detail' photo.id %}">
+                    <img src="{{ photo.image.url }}" class="w-100 shadow-1-strong rounded mb-4 shadow-lg" alt="photos">
+                </a>
+<p>                                {{ photo.signature }}
+</p>
+                    <p>{{ photo.user.username }}</p>
+                    <p>{{ photo.created_at }}</p>
+                {% if user.is_authenticated %}
+                    {% csrf_token %}
+                    {% if photo.id in favorited_ids %}
+                        <button class="btn btn-danger remove-favorite mt-3 mb-3" data-photo-id="{{ photo.id }}">Удалить из избранного</button>
+                    {% else %}
+                        <button class="btn btn-success add-favorite mt-3 mb-3" data-photo-id="{{ photo.id }}">Добавить в избранное</button>
+                    {% endif %}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
