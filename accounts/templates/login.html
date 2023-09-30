@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h3><a href="#" class="text-left text-decoration-none logo-color">HH</a></h3>
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-2">
+                <img src="{% static 'img/Saly-3.png' %}" alt="#">
+            </div>
+            <div class="col-md-6">
+                <div class="card container brd-radius shadow">
+                    <div class="card-body text-center flex-column">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title mb-0">Welcome to Lorem <br><span class="font-size-header">Sign In</span></h5>
+                            <p class="card-text">No accounts ? <br><a href="{% url 'register' %}" class="color-orange">Sign Up</a></p>
+
+                        </div>
+                    </div>
+                    <form action="{% url 'login' %}" method="post">
+                        {% csrf_token %}
+                        <label for="id-one">Enter your username or email address</label>
+                    <input type="text" class="form-control p-4 mb-4 brd-radius-input" placeholder="Username or email address" name="username">
+                    <label for="id-two">Enter your password</label>
+                    <input type="password" class="form-control p-4 brd-radius-input" placeholder="Password" name="password">
+
+                    <button class="shadow rounded btn text-white brd-radius-input btn-color-submit mt-5 w-100">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <img src="{% static 'img/Saly-2.png' %}" alt="#">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
